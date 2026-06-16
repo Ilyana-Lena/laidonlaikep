@@ -1,8 +1,16 @@
 import streamlit as st
 
-# Tiêu đề ứng dụng
-st.image("logo.png", width=150)
-st.title("Ứng dụng tính tiền gửi tiết kiệm_Diemquynh")
+# Tạo 2 cột: ảnh và tiêu đề
+col1, col2 = st.columns([1, 6])
+
+with col1:
+    st.image(
+        r"C:\Users\admin\OneDrive\Hình ảnh\_MG_7814.png",
+        width=80
+    )
+
+with col2:
+    st.title("💰 Ứng dụng tính tiền gửi tiết kiệm")
 
 
 # Nhập dữ liệu
