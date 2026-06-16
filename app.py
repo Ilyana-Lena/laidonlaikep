@@ -5,7 +5,7 @@ col1, col2 = st.columns([1, 4])
 
 with col1:
     # Link raw từ GitHub của bạn
-    st.image("https://raw.githubusercontent.com/Ilyana-Lena/laidonlaikep/main/laidonlaikep/_MG_7814)%20(1).png", width=120)
+    st.image("https://raw.githubusercontent.com/Ilyana-Lena/laidonlaikep/main/laidonlaikep/logo.png", width=100)
 
 with col2:
     # Thêm khoảng trống phía trên để tiêu đề căn giữa với ảnh (tùy chỉnh nếu cần)
