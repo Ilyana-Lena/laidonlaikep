@@ -8,7 +8,7 @@ with col1:
     st.image("Logo.png", width=200)
 
 with col2:
-    st.title("Ứng dụng tính tiền gửi tiết kiệm")   
+    st.title("Ứng dụng tính tiền gửi tiết kiệm_Dquynh")   
 
 # Nhập dữ liệu
 C = st.number_input(
