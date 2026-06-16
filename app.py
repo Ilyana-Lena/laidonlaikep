@@ -4,11 +4,14 @@ import streamlit as st
 col1, col2 = st.columns([1, 4])
 
 with col1:
-    # Link raw từ GitHub của bạn
-    st.image("https://raw.githubusercontent.com/Ilyana-Lena/laidonlaikep/main/laidonlaikep/logo.png", width=100)
+    # Nếu file Logo.png nằm cùng thư mục với app.py, bạn chỉ cần gọi tên file
+    # Nếu dùng link URL, hãy đảm bảo đó là link 'raw'
+    try:
+        st.image("Logo.png", width=120)
+    except:
+        st.warning("Không tìm thấy ảnh. Vui lòng kiểm tra lại tên file Logo.png trong thư mục của bạn.")
 
 with col2:
-    # Thêm khoảng trống phía trên để tiêu đề căn giữa với ảnh (tùy chỉnh nếu cần)
     st.write("#") 
     st.title("Ứng dụng tính tiền gửi tiết kiệm")   
 
