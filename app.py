@@ -1,18 +1,16 @@
 import streamlit as st
 
-# Chia bố cục: 1 cột cho ảnh, 4 cột cho tiêu đề
-col1, col2 = st.columns([1, 4])
+# Tạo 2 cột: Cột 1 chứa ảnh (tỉ lệ 1), Cột 2 chứa tiêu đề (tỉ lệ 5)
+col1, col2 = st.columns([1, 5])
 
 with col1:
-    # Nếu file Logo.png nằm cùng thư mục với app.py, bạn chỉ cần gọi tên file
-    # Nếu dùng link URL, hãy đảm bảo đó là link 'raw'
-    try:
-        st.image("Logo.png", width=120)
-    except:
-        st.warning("Không tìm thấy ảnh. Vui lòng kiểm tra lại tên file Logo.png trong thư mục của bạn.")
+    # Đảm bảo file 'Logo.png' nằm cùng thư mục với file code (app.py)
+    # Nếu file nằm trong thư mục khác, ví dụ 'images/Logo.png', hãy sửa lại đường dẫn
+    st.image("Logo.png", width=100)
 
 with col2:
-    st.write("#") 
+    # Căn chỉnh tiêu đề cho hài hòa với vị trí ảnh
+    st.markdown("<br>", unsafe_allow_html=True) # Tạo khoảng trống phía trên
     st.title("Ứng dụng tính tiền gửi tiết kiệm")   
 
 # Nhập dữ liệu
