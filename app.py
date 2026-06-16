@@ -5,7 +5,7 @@ col1, col2 = st.columns([1, 5], vertical_alignment="center")
 
 with col1:
     # Bạn nên dùng ảnh có nền trong suốt hoặc hình vuông để trông cân đối hơn, ảnh sắc nét
-    st.image("Logo.png", width=150)
+    st.image("Logo.png", width=200)
 
 with col2:
     st.title("Ứng dụng tính tiền gửi tiết kiệm")   
