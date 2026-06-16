@@ -5,7 +5,7 @@ col1, col2 = st.columns([1, 6])
 
 with col1:
     st.image(
-        r"C:\Users\admin\OneDrive\Hình ảnh\_MG_7814.png",
+        r"C:\Users\admin\OneDrive\Pictures\_MG_7814.png",
         width=80
     )
 
