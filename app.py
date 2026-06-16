@@ -2,7 +2,7 @@ import streamlit as st
 
 # Tiêu đề ứng dụng
 st.title("💰 Ứng dụng tính tiền gửi tiết kiệm")
-st.image(![alt](http://"C:\Users\admin\OneDrive\Hình ảnh\_MG_7814).png")
+![alt](http://"C:\Users\admin\OneDrive\Hình ảnh\_MG_7814).png"
 
 
 # Nhập dữ liệu
