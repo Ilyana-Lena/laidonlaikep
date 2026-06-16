@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Tiêu đề ứng dụng
-st.title( Ứng dụng tính tiền gửi tiết kiệm_Diemquynh")
+st.title("Ứng dụng tính tiền gửi tiết kiệm_Diemquynh")
 
 st.image(r"C:\Users\admin\OneDrive\Hình ảnh\_MG_7814.png", width=150)
 
