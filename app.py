@@ -1,7 +1,16 @@
 import streamlit as st
 
-# Tiêu đề ứng dụng
-st.title("💰 Ứng dụng tính tiền gửi tiết kiệm")   
+# Chia bố cục: 1 cột cho ảnh, 4 cột cho tiêu đề
+col1, col2 = st.columns([1, 4])
+
+with col1:
+    # Link raw từ GitHub của bạn
+    st.image("https://raw.githubusercontent.com/Ilyana-Lena/laidonlaikep/main/laidonlaikep/_MG_7814)%20(1).png", width=120)
+
+with col2:
+    # Thêm khoảng trống phía trên để tiêu đề căn giữa với ảnh (tùy chỉnh nếu cần)
+    st.write("#") 
+    st.title("Ứng dụng tính tiền gửi tiết kiệm")   
 
 # Nhập dữ liệu
 C = st.number_input(
