@@ -1,16 +1,13 @@
 import streamlit as st
 
-# Tạo 2 cột: Cột 1 chứa ảnh (tỉ lệ 1), Cột 2 chứa tiêu đề (tỉ lệ 5)
-col1, col2 = st.columns([1, 5])
+# Sử dụng vertical_alignment="center" để căn chỉnh ảnh và tiêu đề trên cùng một hàng
+col1, col2 = st.columns([1, 5], vertical_alignment="center")
 
 with col1:
-    # Đảm bảo file 'Logo.png' nằm cùng thư mục với file code (app.py)
-    # Nếu file nằm trong thư mục khác, ví dụ 'images/Logo.png', hãy sửa lại đường dẫn
-    st.image("laidonlaikep/Logo.png", use_container_width=True) # use_column_width=True sẽ tự động căn chỉnh kích thước ảnh phù hợp với cột, giúp ảnh rõ nét hơn. Nếu bạn muốn đặt chiều rộng cụ thể, hãy sử dụng 'width' thay thế.
+    # Bạn nên dùng ảnh có nền trong suốt hoặc hình vuông để trông cân đối hơn, ảnh sắc nét
+    st.image("Logo.png", width=150)
 
 with col2:
-    # Căn chỉnh tiêu đề cho hài hòa với vị trí ảnh
-    st.markdown("<br>", unsafe_allow_html=True) # Tạo khoảng trống phía trên
     st.title("Ứng dụng tính tiền gửi tiết kiệm")   
 
 # Nhập dữ liệu
