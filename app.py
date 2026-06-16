@@ -1,9 +1,25 @@
 import streamlit as st
+from PIL import Image
 
 # Tiêu đề ứng dụng
 st.title("💰 Ứng dụng tính tiền gửi tiết kiệm")
 ![alt](http://"C:\Users\admin\OneDrive\Hình ảnh\_MG_7814).png"
 
+st.title("Upload và hiển thị ảnh")
+
+uploaded_file = st.file_uploader(
+    "Chọn ảnh",
+    type=["jpg", "jpeg", "png"]
+)
+
+if uploaded_file is not None:
+    image = Image.open(uploaded_file)
+
+    st.image(
+        image,
+        caption="Ảnh đã tải lên",
+        use_container_width=True
+    )       
 
 # Nhập dữ liệu
 C = st.number_input(
