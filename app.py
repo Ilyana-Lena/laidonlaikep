@@ -1,9 +1,9 @@
 import streamlit as st
 
 # Tiêu đề ứng dụng
+st.image(r"C:\Users\admin\OneDrive\Hình ảnh\_MG_7814.png", width=150)
 st.title("Ứng dụng tính tiền gửi tiết kiệm_Diemquynh")
 
-st.image(r"C:\Users\admin\OneDrive\Hình ảnh\_MG_7814.png", width=150)
 
 # Nhập dữ liệu
 C = st.number_input(
